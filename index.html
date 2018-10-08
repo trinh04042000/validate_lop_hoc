@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function nameClass (str) {
+        regaxp = /^[C,A,P]{1}[0-9]{4}[G,H,I,K,L,M]{1}$/;
+        if (regaxp.test(str)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    var classname = 'C0318G';
+    console.log(nameClass(classname));
+    var classname = 'M0318G';
+    console.log(nameClass(classname));
+</script>
+</body>
+</html>
